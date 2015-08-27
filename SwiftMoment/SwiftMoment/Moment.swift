@@ -229,11 +229,11 @@ public func minimum(moments: Moment...) -> Moment? {
  call moment() with one of the supported input types.
 */
 public struct Moment: Comparable {
-    let date: NSDate
-    let timeZone: NSTimeZone
-    let locale: NSLocale
+    public let date: NSDate
+    public let timeZone: NSTimeZone
+    public let locale: NSLocale
 
-    init(date: NSDate = NSDate()
+    public init(date: NSDate = NSDate()
         , timeZone: NSTimeZone = NSTimeZone.defaultTimeZone()
         , locale: NSLocale = NSLocale.autoupdatingCurrentLocale()) {
         self.date = date
